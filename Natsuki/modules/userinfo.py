@@ -238,10 +238,10 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Appraising...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>C̷̡̰̱͍͈̩̺̗̞̳̣͓̬͗̈̃̚ǫ̵̟͕̝̠͎̜̙̓͑͝n̶̡̧̓̃̓́͆̉̐̑ň̵̟̿̑̀̓͝ę̵̜͍̖̣̭̭̼̙̗̌͘͘ć̴̻̝͎̩̟̞͓̬̘̗̬̦͆́t̶̫́̔́̊i̸̢̛͍̺̗̲͉͉͉̬̻̖̳̺͍̱̍̍̾̍̈́̏̀̈́̾̇͑n̴̙̳̹͚̺̜̯̒͒́͗̌͂̿̓̂͌̅̄̋̚͠ͅg̸̠̭͙̳͈̺̰̤̎̈́͋́̏͝͠ ̴̧̼͇͚̺͇̦̱̘̥̟̀́̃̒̾̑̔͊̇͋͠t̷̹̺͊́̏̅̍͌͗͗̋̓̒̐̚͝ơ̵͖̩͎̫̤͚̮̟̞̳̝̈̆͌̆̾̈́̈́̌͊̕͝͝͝ͅ ̸͉̬͓͉͕̖̯͚̈́̈́̓͐̔͆t̴̢̧͓̳̺͕̬͓̰͇͖͆̌͆̎͑͑̽̔͗̏̀̚͝h̶̰̼͙͚́̒͆͆̐̆ẹ̵̡̯̙͔̙̟̦̪̣̻̱̒̅͌̅͆̆͗̒̄͊̂̓͘͝c̵̨̘̳̘̞̝̝̞͓̥̣̙̈́̾̌̔͊̒́̂͂̓́̽̒͜͜͠o̵͉̦̟̺̯̩͔̥̗̗̭͚͉͌̐́͜͜ơ̸̅͛̃̒͛͜͠ļ̷̬̝̩͎̜̎m̴͖̩͔͕͈͈̦̖̩͖̮̋̀̋̈́̓̈͂̚͜͝͠ǫ̴̭̲̤͙̥͍̤̮͚͐̒̈́̍̿̉̏̉̈́̒͋͘ȯ̶̧̮͓͎͕͇̬͖̲͔̹̭̲ņ̷̜̏̂͂͌̑ͅ ̸̞͎̮̟̖̮̘̜͍̻̲͖̥̔̐͘̚̕͝ḑ̷̢̢͚̝̖̞̈̔̏̏͒̑̑͑͊̈́̍̕͘̕͜ą̶̢̠̹̹̩͕̤̫͕͉̻̊̿̉̋͊͐̊͒̓̈̄͒̆͜͝͝ͅͅẗ̵̢̰̩͚͖̘̮́͗̉̓̂̈́͑̂͊̓a̸̝͑̓̆b̶̭̣͙̄̅̈́̐̍͛̌͗̄͝͝a̸̦̻̮̩͐̊͝s̸̺̈́͌͑͌̾̀̂͠ę̵͍̙̠͕͈̮͋̑̈͜͠͝ͅ.....</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b> Appraisal results:</b> 」\n"
+        f"╒═══「<b> M̶̯͑Ö̷̭̩͓̘̜̱̬̮͙̝̝́̕͠͝Ơ̶͍̯͉͔͒͒͐̄͑̇͗̎̎̓̏͝͝͝Ñ̴͉̯̦͕̗͍̙̩͔̬̭̩̐̕ͅ results:</b> 」\n"
         f"ID: <code>{user.id}</code>\n"
         f"First Name: {html.escape(user.first_name)}"
     )
@@ -548,7 +548,7 @@ Examples:
  • `/info`*:* get information about a user. 
  
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/OnePunchUpdates/192)
+ Come and see [HP](https://t.me/lunasupportz)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
