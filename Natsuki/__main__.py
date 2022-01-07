@@ -63,46 +63,50 @@ from Natsuki.modules.helper_funcs.misc import paginate_modules
 from Natsuki.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-👋 Hey There, My Name is 𝗡𝗮𝘁𝘀𝘂𝗸𝗶. 
-I'm a Powerfull Group Manager Bot With Cool Modules. feel free to add me to your groups!
+Hey There!
+I'm here to help you manage your groups!
+Commands available:
+× /start: Start the bot
+× /help: Give's you this message.
+All commands can either be used with / OR !.[RECENT](https://t.me/thecoolmoon)
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="Natsuki News 🙋‍♂️", url="https://t.me/Natsuki_Updates"
+            text="F̴̼͔͇̫͇̟̲̗͉̩̥͍̞̪̓͠ͅè̵̙̮̭̞̻͍͔̟̤ͅd̵̢̬̼̞͎͕͍̪̱̬̦͚̪͛́̑̅̏͘͜ͅ ̶̢̩͔͍̥͚̥̼̱̫̈́j̶̧̧̧̬̖̩̲̻̹͕̭̜̀̉͐̍̆́̀̆̕ō̷̪̄i̴̛̠̘͍͔͉̯̳͔̠̞̩͂̾̌̒͋̆̊͆̽̐̑̔͜͝ṉ̶̨̢͕̼͖̼̪̣͍̅̈́̈́", url="https://t.me/tamilchating_fed"
         ),
         InlineKeyboardButton(
-            text="Support Group 💬", url="https://t.me/NatsukiSupport_Official"
+            text="S̶̛̲̣͑͝ṳ̸͔̼̈̊͒̈́̇̿͋̄p̷̧̛͎͈̜̯͖̏͗͐̒͊̇͋̈́͆̋͠͠p̸̲͍̆͒͒͝o̶̥̫̻͖͚͇̽̉̍͑̊̃̾̈́̈́͂͑͘̕͜͝r̵̡̻̙̖͉͚̰̭̩̱̲̼͒̂͂͂̿̏̋͘t̷̡̨̧̜̤̙͖̼͌̈́̿͆", url="https://t.me/lunasupportz"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="Source 🗒", url="Github.com/Sadew451"
+            text="N̵̡̘̗̘̤̘̮͚̖̗͈͈̽̄̃̚͜ͅe̴̙̤̩̘̿̎̄͐́̇̅̉̔́͊̾̓̚͝ṭ̸̪̺̭͕̮̙͚̲̩͎̳̩͒̔̓̈́̌̃̚͝ẅ̷͓́̏́͊͑͒o̵̢̟͙̹̒̔r̵̭̙̖̣̟͉̈́̿̇͐͌͐͘k̶̥̩͙͇̠̻̱̯̖̭̭̪̍́̉͆̀͒̉́̚͠", url="https://t.me/luna_officials"
         ),
         InlineKeyboardButton(
-            text="Command Help ❓", callback_data="help_back"
+            text="Command Help ", callback_data="help_back"
         ),
     ],
     [
         InlineKeyboardButton(
             text="➕ Add To Me Your Group ➕",
-            url="t.me/TheNatsukiBot?startgroup=true",
+            url="t.me/ThecoolmoonBot?startgroup=true",
         ),
     ],
 ]
 
-NATSUKI_IMG = "https://telegra.ph/file/2d0fa7e07eb1fe3983aba.jpg"
+NATSUKI_IMG = ""
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/2d0fa7e07eb1fe3983aba.jpg)
-
-/start: Starts me! You've probably already used this.
-/help: Click this, I'll let you know about myself!
-/donate: You can support my creater using this command.
-/settings: 
-   in PM: will send you your settings for all supported modules.
-   in a Group: will redirect you to pm, with all that chat's settings.
+[thecoolmoon](https://telegra.ph/file/52b1b195f0d7df5ff79b2.jpg)
+╔ /start: Starts me! You've probably already used this.
+╠ /help: Click this, I'll let you know about myself!
+╠ /donate: You can support my creater using this command.
+╠ /settings : 
+╚══║in PM: will send you your settings for all supported modules.
+   ╚ in a Group: will redirect you to pm, with all that chat's settings.
+   Powered by : [ALAN WALKER](https://t.me/tamilchating_fed)
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
@@ -111,7 +115,7 @@ HELP_STRINGS = f"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them  [SADEW JAYASEKARA](t.me/Darkridersslk)"""
+Support them  [ALAN WALKER](t.me/alpha_romeo_06)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -371,8 +375,8 @@ def Natsuki_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"* Hi There  The name's {dispatcher.bot.first_name} \n\nAs  You I'm a next generational group management bot developed by Natsuki Updates.* "
-            f"\n\n Join [NatsukiUpdates](https://t.me/Natsuki_Updates) To Keep Yourself Updated About {dispatcher.bot.first_name}"
+            text=f"* Hi There  The name's {dispatcher.bot.first_name} \n\nAs  You I'm a next generational group management bot developed by thecoolmoon Updates.* "
+            f"\n\n Join [lunaupdate](https://t.me/lunasupportz) To Keep Yourself Updated About {dispatcher.bot.first_name}"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features"
             f"\n\nYou Can Know More About Me By Clicking The Below Buttons",
@@ -405,7 +409,7 @@ def Natsuki_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [Natsuki Support](https://t.me/NatsukiSupport_Official).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [luna](https://t.me/luna_officials).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -423,9 +427,9 @@ def Natsuki_about_callback(update, context):
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [SDBOTsInifinity](https://t.me/SDBOTs_Inifinity)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was written by Sadew Jayasekara"
+            text=f"*{dispatcher.bot.first_name} Is the redisigned version of LUNA for the best performance.*"
+            f"\n\nBased on [LUNABOTS](https://t.me/lunasupportz)."
+            f"\n\n{dispatcher.bot.first_name}'s source code was written by alan walker"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
