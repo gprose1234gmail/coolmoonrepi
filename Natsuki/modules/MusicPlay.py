@@ -5,7 +5,7 @@ __help__ = """
 3) Try /play [song name] for the first time by an admin
 4) If userbot joined enjoy music, If not add @NatsukiHelper to your group and retry
 * ✨For Channel Music Play✨ *
-1) Make @TheNatsukiBot admin of your channel 
+1) Make me as admin of your channel 
 2) Send /userbotjoinchannel in linked group
 3) Now send commands in linked group 
 * ✨Groups Music Play✨ *
@@ -47,11 +47,11 @@ channel is also can be used instead of c ( /cplay = /channelplay )
  
 * ✨More tools✨ *
 • /admincache: Updates admin info of your group. Try if bot isn't recognize admin
-• /userbotjoin: Invite @NatsukiHelper Userbot to your chat 
+• /userbotjoin: Invite  Userbot to your chat 
  
 * 🙋‍♀️Assisten🙋‍♀️ *
-@NatsukiHelper
+automatically join while u play song
 * 🙋‍ Bot 🙋‍♀️ *
-@TheNatsukiBot
+@thecoolmoonbot &rosi
 """
 __mod_name__ = "Music Play"
